@@ -1,13 +1,41 @@
 \documentclass{article}
 
-\title{Intégration de Lebesgue et Probabilités}
-\author{Luke OGURO}
+\usepackage{amsmath, amsthm}
+\usepackage{mathrsfs}
+\usepackage{color}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+\newtheoremstyle{mystyle}
+    {3pt}
+    {3pt}
+    {\itshape}
+    {3pt}
+    {\bfseries}
+    {.}
+    {\newline}
+    {\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+\theoremstyle{mystyle}
+\newtheorem{dfn}{Def}[section]
+\newtheorem{prop}[dfn]{Prop}
+\newtheorem{lem}[dfn]{Lem}
+\newtheorem{thm}[dfn]{Thm}
+\newtheorem{cor}[dfn]{Cor}
+\newtheorem{rem}[dfn]{Rmk}
 
 \begin{document}
+\title{Lebesgue Integration and Probabilities}
+\author{Luke OGURO}
 \maketitle
 
 \tableofcontents
 
+\section{Measures on a product space}
+\subsection{Product of measurable spaces}
+\begin{dfn}[Product of measurable spaces]
+  $(E_1, \mathcal{E}_1), \dots, (E_n, \mathcal{E}_n)$: measurable sp.\\
+  Then the \red{product measurable space} is a measurable space 
+  $(E_1 \times \cdots \times E_n, \sigma(\mathcal{E}_1 \times \cdots \times \mathcal{E}_n))$.
+\end{dfn}
 
 \bibliographystyle{plain}
 \bibliography{references}
