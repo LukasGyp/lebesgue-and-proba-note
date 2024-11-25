@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage{amsmath, amsthm}
+\usepackage{amsmath, amsthm, mathtools}
 \usepackage{mathrsfs}
 \usepackage{color}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -33,8 +33,14 @@
 \subsection{Product of measurable spaces}
 \begin{dfn}[Product of measurable spaces]
   $(E_1, \mathcal{E}_1), \dots, (E_n, \mathcal{E}_n)$: measurable sp.\\
-  Then the \red{product measurable space} is a measurable space 
-  $(E_1 \times \cdots \times E_n, \sigma(\mathcal{E}_1 \times \cdots \times \mathcal{E}_n))$.
+  Then 
+  \begin{equation}
+    \mathcal{E}_1 \times \cdots \times \mathcal{E}_n \coloneqq 
+    \sigma(\{A_1 \times \cdots \times A_n \mid A_i \in \mathcal{E}_i, i=1, \dots, n\}) 
+  \end{equation}
+  is a $\sigma$-algebra on $E_1 \times \cdots \times E_n$. 
+  $(E_1 \times \cdots \times E_n, \mathcal{E}_1 \times \cdots \times \mathcal{E}_n)$ 
+  is called the \red{product of measurable spaces}.
 \end{dfn}
 
 \bibliographystyle{plain}
